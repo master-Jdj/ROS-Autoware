@@ -1,0 +1,32 @@
+特别注意网络问题
+
+第一步，安装Ubuntu20.04  *24.04ubuntu不再支持ros1*
+
+浏览器搜索
+https://mirrors.tuna.tsinghua.edu.cn/ubuntu-releases/focal/ubuntu-20.04.6-desktop-amd64.iso
+
+之后正常安装Ubuntu
+
+第二步安装ros
+
+打开Ubuntu终端
+~$:wget http://fishros.com/install -O fishros && . fishros
+
+按照建议操作，注意有一步骤要选择版本 ros1_noetic
+
+等待安装完成
+
+第三步验证ros系统
+
+输入  ~$:roscore   进入ros系统,无错误即成功
+
+继续海龟测试：新开终端  Ctrl+Alt+T  
+			输入 ~$:rosrun turtlesim turtlesim_node
+
+			再次新开终端  Ctrl+Alt+T  
+			输入 ~$:rosrun turtlesim turtle_teleop_key
+正常可以用上下左右键控制海龟移动
+
+完成！
+
+

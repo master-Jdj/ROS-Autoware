@@ -1,0 +1,13 @@
+
+
+add_executable(<name> <src>...)
+target_link_libraries(<name> ${OPENCV_LIBS})
+
+
+
+
+[ subscriber示例：
+{
+    add_executable(pose_subscriber src/pose_subscriber.cpp)
+    target_link_libraries(pose_subscriber ${catkin_LIBRARIES})
+}
