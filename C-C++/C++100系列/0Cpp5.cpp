@@ -16,7 +16,7 @@ i=9-1（从大到小），当num>=10^3-i*10^m(m=2)时，说明这个三位数的
 记录为num_p+=i
 */
 
-int compare(int num)  //有问题！！！ 编码格式未解决
+int compare(int num)  //方法二数值计算有问题！！！ 编码格式未解决
 {
     int sum = 0;
     int m_init;
