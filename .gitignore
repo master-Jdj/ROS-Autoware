@@ -1,5 +1,65 @@
-#编译器环境
+# =============================
+# ROS1 / Catkin build outputs
+# =============================
+/build/
+/devel/
+/install/
+/log/
+/.catkin_tools/
+/.ros/
+
+# Catkin/CMake generated files
+CMakeCache.txt
+CMakeFiles/
+Makefile
+cmake_install.cmake
+compile_commands.json
+CTestTestfile.cmake
+Testing/
+catkin_generated/
+
+# =============================
+# Editor / IDE settings
+# =============================
 .vscode/
-Computer Basic.code-workspace
+.idea/
+*.code-workspace
 
+# =============================
+# Compiler / binary artifacts
+# =============================
+*.o
+*.obj
+*.lo
+*.la
+*.a
+*.so
+*.dylib
+*.dll
+*.lib
+*.exe
+*.out
 
+# =============================
+# Logs and temp files
+# =============================
+*.log
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# =============================
+# OS generated files
+# =============================
+.DS_Store
+Thumbs.db
+
+# =============================
+# Python cache (if ROS scripts are used)
+# =============================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd

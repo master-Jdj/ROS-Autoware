@@ -70,6 +70,23 @@ $ git pull origin master	# 拉取远程仓库
                     示例2： doc/  只忽略 doc 文件夹下的所有文件
 " /* " 忽略子目录下文件   示例： doc/*.txt  只忽略 doc/.txt 文件，但不会忽略 doc/sever/.txt
 
-
+# 分支管理  避免交集冲突；支持多个分支并行执行，代码不冲突，同时存在多个版本
+1、假设存在冲突，解决办法修改重新提交。如：A分支和B分支都修改了同一行代码，提交后会提示冲突，解决办法：修改代码（确定保留A/B分支的代码）后重新提交即可。
+2、一般存在其他分支dev分支，开发人员在dev分支上进行开发，完成后合并到master分支，master分支保持稳定。不允许直接修改master分支代码。
+```bash
+#新建分支
+$ git branch branch_name
+#切换分支
+$ git checkout branch_name
+#新建分支并切换
+$ git checkout -b branch_name
+#合并分支到当前分支
+$ git merge branch_name
+#删除分支
+$ git branch -d branch_name
+#删除远程分支
+$ git push origin --delete branch_name
+$ git branch -dr [remote/branch]
+```
 
 [end...]
