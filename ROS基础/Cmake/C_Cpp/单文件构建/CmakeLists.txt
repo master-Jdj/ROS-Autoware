@@ -1,0 +1,11 @@
+# 单文件（一个源文件）编译的最小工具链
+
+# 指定构建项目，所需最低的CMake 版本
+cmake_minimum_required(VERSION 3.0)
+
+
+#命名工程
+project(Example)
+
+#指定源文件main.cpp ,构建可执行文件
+add_executable(Example main.cpp)

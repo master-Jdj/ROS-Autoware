@@ -81,12 +81,16 @@ $ git checkout branch_name
 #新建分支并切换
 $ git checkout -b branch_name
 #合并分支到当前分支
-$ git merge branch_name
+#当前main分支，命令指将origin(远程名)/dev(分支)分支合并到main分支
+$ git merge branch_name 
 #删除分支
 $ git branch -d branch_name
 #删除远程分支
 $ git push origin --delete branch_name
 $ git branch -dr [remote/branch]
+#文件取消跟踪,先拉取最新的代码，取消跟踪后再推送
+$ git rm --cached -- ["~/相对路径/file"]
+
 ```
 
 [end...]
