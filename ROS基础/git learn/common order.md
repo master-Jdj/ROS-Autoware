@@ -56,7 +56,7 @@ $ git clone [url]
 $ git status	# 查看当前状态
 $ git add .	# 添加所有文件 到暂存区
 $ git commit -m "message代表本次提交的信息"	# 提交 到本地仓库
-$ git push origin master	# 推送到远程仓库
+$ git push origin master	# 推送到远程仓库,根据具体分支名修改master，origin为远程仓库名
 $ git pull origin master	# 拉取远程仓库
 ```
 # 忽略文件
