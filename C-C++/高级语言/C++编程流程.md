@@ -1,7 +1,9 @@
 程序流程：{
 		源代码
 
-		编译器
+		编译器{g++ clang VS C++_Compiler}
+		在线C++编译器：online c++ compiler
+		
 
 		目标代码
 
@@ -9,6 +11,17 @@
 
 		可执行代码
 		}
+
+g++ 编译流程：{
+	1.编译源文件，生成二进制的目标文件(.obj )
+？十进制文件是哪个？ 可执行文件win上生成.exe ; Linux上生成.out
+`$ g++ -c file.cpp   # file.obj ; a.out`
+或者
+`$ g++ -std=c++17 -c file.cpp -o pro  #file.obj ; pro.out`
+	2.链接目标文件，生成可执行文件
+`$ g++ file.obj -o file.exe`
+
+}win一步流程：$ g++ file.cpp -o file.exe
 
 编程建议：函数头要明确参数。具体如下{
 $:	int main(void)  而不是 main（）

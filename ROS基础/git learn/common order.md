@@ -56,7 +56,7 @@ $ git clone [url]
 $ git status	# 查看当前状态
 $ git add .	# 添加所有文件 到暂存区
 $ git commit -m "message代表本次提交的信息"	# 提交 到本地仓库
-$ git push origin master	# 推送到远程仓库
+$ git push origin master	# 推送到远程仓库,根据具体分支名修改master，origin为远程仓库名
 $ git pull origin master	# 拉取远程仓库
 ```
 # 忽略文件
@@ -81,12 +81,16 @@ $ git checkout branch_name
 #新建分支并切换
 $ git checkout -b branch_name
 #合并分支到当前分支
-$ git merge branch_name
+#当前main分支，命令指将origin(远程名)/dev(分支)分支合并到main分支
+$ git merge branch_name 
 #删除分支
 $ git branch -d branch_name
 #删除远程分支
 $ git push origin --delete branch_name
 $ git branch -dr [remote/branch]
+#文件取消跟踪,先拉取最新的代码，取消跟踪后再推送
+$ git rm --cached -- ["~/相对路径/file"]
+
 ```
 
 [end...]
