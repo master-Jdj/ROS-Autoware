@@ -24,6 +24,7 @@ catkin_generated/
 .vscode/
 .idea/
 *.code-workspace
+.clangd
 
 # =============================
 # Compiler / binary artifacts
